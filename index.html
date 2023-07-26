@@ -18,7 +18,7 @@
       <p>Preencha o formulário abaixo para agendar sua mentoria</p>
     </header>
 
-    <form>
+    <form id="my-form">
       <fieldset>
         <div class="fieldset-warpper">
           <legend>INFORMAÇÕES PESSOAIS</legend>
@@ -36,8 +36,7 @@
             <label for="event-surname">Sobrenome</label>
             <input 
             type="text" 
-            id="event-surname"
-            minlength="6">            
+            id="event-surname">            
           </div>
 
         </div>
@@ -49,7 +48,11 @@
         
         <div class="input-warpper">
           <label for="event-password">Senha<span>(mínimo de 6 caracteres)</span></label>
-          <input type="password" id="event-password">
+          <input 
+          type="password" 
+          id="event-password"
+          minlength="6"
+         >
         </div>
       </div>
         </div>
@@ -71,7 +74,7 @@
 
       </fieldset>
 
-      <fieldset>
+      <fieldset class="bottom">
         <div class="fieldset-warpper">
           <legend>SEUS HORÁRIOS DISPONÍVEIS</legend>
 
@@ -104,7 +107,6 @@
         <h3>SEGUNDA MENTORIA</h3>
 
         <div class="gap-input">
-
           <div class="col-3">
 
         <div class="input-warpper">
@@ -124,16 +126,19 @@
           <input type="time" id="event-end">
         </div>
       </div>
-
-      </div>
-
-          </div>  
+    </div>
+  </div>
 
       </fieldset>
+    </form>
 
-      
-
-    </form>S
+    <footer>
+      <input 
+      type="submit" 
+      class="button" 
+      form="my-form"
+      value="Salvar">
+    </footer>
 
   </div>
   
