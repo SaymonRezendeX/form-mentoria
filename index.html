@@ -23,17 +23,117 @@
         <div class="fieldset-warpper">
           <legend>INFORMAÇÕES PESSOAIS</legend>
 
+      <div class="gap-input">
+
+        <div class="col-2">
+
           <div class="input-warpper">
             <label for="event-name">Nome</label>
             <input type="text" id="event-name">
-
+          </div>
+          
+          <div class="input-warpper">
+            <label for="event-surname">Sobrenome</label>
+            <input 
+            type="text" 
+            id="event-surname"
+            minlength="6">            
           </div>
 
         </div>
 
+        <div class="input-warpper">
+          <label for="event-email">Email<span>(digite um valor válido)</span></label>
+          <input type="email" id="event-email">
+        </div>
+        
+        <div class="input-warpper">
+          <label for="event-password">Senha<span>(mínimo de 6 caracteres)</span></label>
+          <input type="password" id="event-password">
+        </div>
+      </div>
+        </div>
+
       </fieldset>
 
-    </form>
+      <fieldset>
+        <div class="fieldset-warpper">
+          <legend>INFORMAÇÕES DO MENTOR</legend>
+
+          <div class="gap-input">
+
+
+          <div class="input-warpper">
+            <label for="event-name">Nome do seu mentor<span>(só o primeiro nome)</span></label>
+            <input type="text" id="event-name">
+          </div>
+          </div>
+
+      </fieldset>
+
+      <fieldset>
+        <div class="fieldset-warpper">
+          <legend>SEUS HORÁRIOS DISPONÍVEIS</legend>
+
+          <h3>PRIMEIRA MENTORIA</h3>
+
+          <div class="gap-input">
+
+            <div class="col-3">
+
+          <div class="input-warpper">
+            <label for="event-date">Data<span>(DD/MM/AAAA)</span></label>
+            <input type="date" id="event-date">
+          </div>
+
+          <div class="begin-end">
+
+          <div class="input-warpper">
+            <label for="event-begin">Das</label>
+            <input type="time" id="event-begin">
+          </div>
+
+          <div class="input-warpper">
+            <label for="event-end">Até</label>
+            <input type="time" id="event-end">
+          </div>
+        </div>
+            </div>
+        </div>
+
+        <h3>SEGUNDA MENTORIA</h3>
+
+        <div class="gap-input">
+
+          <div class="col-3">
+
+        <div class="input-warpper">
+          <label for="event-date">Data<span>(DD/MM/AAAA)</span></label>
+          <input type="date" id="event-date">
+        </div>
+
+        <div class="begin-end">
+
+        <div class="input-warpper">
+          <label for="event-begin">Das</label>
+          <input type="time" id="event-begin">
+        </div>
+
+        <div class="input-warpper">
+          <label for="event-end">Até</label>
+          <input type="time" id="event-end">
+        </div>
+      </div>
+
+      </div>
+
+          </div>  
+
+      </fieldset>
+
+      
+
+    </form>S
 
   </div>
   
